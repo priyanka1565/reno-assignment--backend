@@ -1,0 +1,17 @@
+table creation query 
+CREATE TABLE `school_db`.`master_school` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `address` TEXT NOT NULL,
+  `city` VARCHAR(255) NOT NULL,
+  `state` VARCHAR(255) NOT NULL,
+  `contact` BIGINT NOT NULL,
+  `image` TEXT NOT NULL,
+  `email_id` VARCHAR(255) NOT NULL,
+  `is_deleted` TINYINT(1) DEFAULT 0,
+  `school_status` INT DEFAULT 101,
+  `updated_at` DATETIME NULL,
+  `created_at` DATETIME NULL,
+  `deleted_date` DATETIME NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
